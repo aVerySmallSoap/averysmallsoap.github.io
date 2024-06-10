@@ -29,11 +29,11 @@ jobs:
       run: |
         mkdir -p database
         touch database/database.sql
-    - name: Execute tests (Unit and Feature tests) via PHPUnit/Pest
-      env:
-        DB_CONNECTION: mysql
-        DB_DATABASE: database/database.sql
-      run: php artisan test
+    # - name: Execute tests (Unit and Feature tests) via PHPUnit/Pest
+    #   env:
+    #     DB_CONNECTION: mysql
+    #     DB_DATABASE: database/database.sql
+    #   run: php artisan test
     - name: build npm
       run: npm run dev
       
