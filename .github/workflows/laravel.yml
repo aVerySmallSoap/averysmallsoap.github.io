@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: skywarth/vite-github-pages-deployer@v1.4.0
     - uses: actions/setup-node@v4.0.2
     - uses: shivammathur/setup-php@2.30.5
     - uses: actions/checkout@v4
